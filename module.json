@@ -1,0 +1,26 @@
+{
+  "id": "hojas-pj-ysystem",
+  "title": "Hojas PJ Ysystem",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "packs": [
+    {
+      "name": "actores-ysystem",
+      "label": "Actores Ysystem",
+      "path": "packs/actores-ysystem",
+      "type": "Actor",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "custom-system-builder",
+      "flags": {}
+    }
+  ],
+  "styles": [
+    "assets/Ysystem.css"
+  ]
+}
