@@ -405,3 +405,78 @@ label[for="profesion-3"] {
 .proftitle label{
   white-space: nowrap;
 }
+.chat-message {
+	background: url('../assets/OLD_PAPER_TEXTURE.jpg')center;
+	background-repeat: no-repeat;
+ 	background-size: 100% 100%;
+	font-family:'Candara';
+}
+.chat-message .message-header .message-sender {
+	font-family:'Candara_Bold';
+	font-size: 2em;
+}
+.chat-message .message-content h1 {
+	font-family:'Candara_Bold';
+}
+.chat-message .message-content h2 {
+	font-family:'Candara_Bold';
+	border:0px;
+}
+.chat-message .message-content h3 {
+	font-family:'Candara_Bold';
+	border:0px;
+}
+.dice-roll .dice-total {
+	border:0px;
+	background: transparent;
+	font-size: 2.3em;
+	margin:15px;
+}
+.dice-tooltip .dice-rolls {
+	justify-content: center;
+}
+.proezabutton {
+	font-family:'Candara_Bold';
+	font-size: 1.5em;
+	border: 2px solid var(--color-underline-header);
+	background-color: #782e222b;
+}
+.editpanel {
+	gap:0px;
+	margin:0px;
+}
+.formulatext {
+	white-space:no-wrap;
+	font-family:'Candara_Bold';
+}
+.paneledit {
+	font-family:'Candara_Bold';
+	margin:0px;
+}
+.paneledit  input[type="text"]{
+	border-style: solid;
+	border-color:black;
+	border-width: 0px 0px 1.5px 0px;
+	border-radius:0px;
+	background:transparent;
+}
+.paneledit  select{
+	border-style: solid;
+	border-color:black;
+	border-width: 0px 0px 1.5px 0px;
+	border-radius:0px;
+	background:transparent;
+}
+.tituloedit {
+	font-size: 1.3em;
+	text-transform:uppercase;
+}
+.panelhabedit {
+	border-top:2px solid black;
+	margin-top:10px;
+	padding-top:10px;
+}
+.borderright {
+	border-right:2px solid black;
+	padding-right:10px;
+}
