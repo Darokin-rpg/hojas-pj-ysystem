@@ -8,7 +8,7 @@ https://foundryvtt.com/packages/custom-system-builder
 https://gitlab.com/custom-system-builder/custom-system-builder
 
 
-Las plantillas tienen una pestaña de edición solo para el gamemaster que permite asignar valores a las habilidades así como cambiar los nombres por defecto de habilidades, atributos, valores pasivos, etc. Los jugadores tan solo tienen acceso a modificar valores de atributo, Salud, Estabilidad y contadores de proezas/yayopoints.
+Las plantillas tienen una pestaña de edición solo para el gamemaster que permite asignar valores a las habilidades así como cambiar los nombres por defecto de habilidades, atributos, valores pasivos, habilidades favorecidas (CAMC), dios patrón (CAMC), vehículos y motocicletas (CAMC). Los jugadores tan solo tienen acceso a modificar valores de atributos, Salud, Estabilidad y contadores de proezas/yayopoints.
 
 Al crear un PN o PNJ asegúrate de asignarle un valor de Salud. Sin un valor de salud la hoja no realizará ninguna tirada de dados.
 
