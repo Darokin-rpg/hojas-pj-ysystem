@@ -1,7 +1,7 @@
 {
   "id": "hojas-pj-ysystem",
   "title": "Hojas PJ Ysystem",
-  "version": "v4",
+  "version": "v5",
   "compatibility": {
     "minimum": "12",
     "verified": "12"
@@ -49,5 +49,5 @@
   ],
   "url": "https://github.com/darokin-rpg/hojas-pj-ysystem",
   "manifest": "https://github.com/darokin-rpg/hojas-pj-ysystem/releases/latest/download/module.json",
-  "download": "https://github.com/darokin-rpg/hojas-pj-ysystem/releases/download/v4/hojas-pj-ysystem.zip"
+  "download": "https://github.com/darokin-rpg/hojas-pj-ysystem/releases/download/v5/hojas-pj-ysystem.zip"
 }

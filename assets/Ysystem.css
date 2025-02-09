@@ -480,3 +480,31 @@ label[for="profesion-3"] {
 	border-right:2px solid black;
 	padding-right:10px;
 }
+.logowal {
+	background: url('../assets/Logo Walhalla.webp')center;
+	background-repeat: no-repeat;
+ 	background-size: 100% 100%;
+	width:20px;
+	height:20px;
+	margin:0px;
+}
+.panelhabcuervos {
+    display: grid;
+    grid-template-columns: 6% 49% auto auto auto;
+    margin: 0px;
+    gap: 0px;
+	font-family: 'Candara_Bold';
+    font-size: 1.2em;
+}
+.paneldios {
+	font-family: 'Candara_Bold';
+    font-size: 1.2em;
+}
+.charname input[type="text"]{
+	font-family: 'Candara_Bold';
+    font-size: 35px;
+	background:transparent;
+	border-width: 0px 0px 2px 0px;
+	border-color:black;
+	border-radius:0px;
+}
