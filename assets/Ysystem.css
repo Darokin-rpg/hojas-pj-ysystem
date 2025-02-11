@@ -508,3 +508,34 @@ label[for="profesion-3"] {
 	border-color:black;
 	border-radius:0px;
 }
+.salesttableca table {
+	background:transparent;
+	border:0px;
+}
+.salesttableca table td div {
+	margin:0px;
+}
+.salesttableca table td {
+	padding:2px 0px 0px 0px;
+}
+.salesttableca table tr:first-child{
+	border-bottom:1.5px solid black;
+}
+.salesttableca table tr:nth-child(3){
+	border-top:1.5px solid black;
+}
+.salesttableca table tr:nth-child(2) p{
+	margin:0px;
+}
+.salesttableca table tr:nth-child(2) td{
+	padding:0px 0px 3px 0px;
+}
+.salesttableca table td:nth-child(1), .salesttableca table td:nth-child(3), .salesttableca table td:nth-child(6), .salesttableca table td:nth-child(10) {
+	border-right:1.5px solid black;
+}
+.salesttableca table tr:nth-child(1) td:nth-child(1), .salesttableca table tr:nth-child(1) td:nth-child(2), .salesttableca table tr:nth-child(1) td:nth-child(3) {
+	background-color:red;
+}
+.salesttableca table tr:nth-child(1) td:nth-child(4), .salesttableca table tr:nth-child(1) td:nth-child(5), .salesttableca table tr:nth-child(1) td:nth-child(6) {
+	background-color:orangered;
+}
