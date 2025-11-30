@@ -1,11 +1,23 @@
 {
   "id": "hojas-pj-ysystem",
   "title": "Hojas PJ Ysystem",
-  "version": "v9",
+  "version": "v10",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12"
+    "minimum": "13",
+    "verified": "13.350"
   },
+  "relationships": {
+    "systems": [
+      {
+        "id": "custom-system-builder",
+        "type": "system",
+        "compatibility": {
+		"minimum": "5.0.0",
+		"verified": "5.0.0"
+		}
+      }
+    ]
+	}
   "packs": [
     {
       "name": "actores-ysystem",
@@ -49,5 +61,5 @@
   ],
   "url": "https://github.com/darokin-rpg/hojas-pj-ysystem",
   "manifest": "https://github.com/darokin-rpg/hojas-pj-ysystem/releases/latest/download/module.json",
-  "download": "https://github.com/darokin-rpg/hojas-pj-ysystem/releases/download/v9/hojas-pj-ysystem.zip"
+  "download": "https://github.com/darokin-rpg/hojas-pj-ysystem/releases/download/v10/hojas-pj-ysystem.zip"
 }
