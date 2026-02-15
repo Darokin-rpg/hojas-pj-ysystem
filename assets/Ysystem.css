@@ -6,10 +6,98 @@
   font-family: 'Candara_Bold';
   src: url('../assets/Candara_Bold.ttf');
 }
-.window-content {
+.character .window-content, .equippableItem .window-content, .custom-dialog .window-content {
 	background: url('../assets/OLD_PAPER_TEXTURE.jpg')center;
 	background-repeat: no-repeat;
- 	background-size: cover;
+ 	background-size: 100% 100%;
+	padding:1rem;
+	color: black;
+}
+.character h3, .equippableItem h3, .custom-dialog h3 {
+	font-family: 'Candara_Bold';
+	font-size:1.7em;
+	color: black;
+}
+.character .grid {
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.character input[type=text], .equippableItem input[type=text], .custom-dialog input[type=text]{
+	box-shadow:0px 0px;
+	color: black;
+    background:transparent;
+    border:1px solid black;
+}
+.character input[type=number], .equippableItem input[type=number], .custom-dialog input[type=number]{
+	box-shadow:0px 0px;
+	color: black;
+    background:transparent;
+    border:1px solid black;
+}
+.character select, .equippableItem select, .custom-dialog select{
+	background:transparent;
+	color: black;
+    border:1px solid black;
+}
+.custom-system-user-inputs td button {
+    color: black;
+}
+.character summary:before, .equippableItem summary:before, .custom-dialog summary:before {
+	border-color: transparent transparent transparent #000000;
+}
+.character input[type="checkbox"]::before, .equippableItem input[type="checkbox"]::before, .custom-dialog input[type="checkbox"]::before {
+    content:"";
+    color: black;
+    font-weight:normal;
+}
+.character  input[type="checkbox"]:checked::after, .equippableItem  input[type="checkbox"]:checked::after, .custom-dialog  input[type="checkbox"]:checked::after {
+    content: "";
+    color: transparent;
+}
+.character input[type="checkbox"]:checked::before, .equippableItem input[type="checkbox"]:checked::before,  .custom-dialog input[type="checkbox"]:checked::before {
+    content: "";
+    color: black;
+}
+.custom-dialog .form-group > label {
+	color: black;
+}
+.character table, .equippableItem table, .custom-dialog table {
+	background:transparent;
+}
+.custom-system-number-field-control {
+	background:transparent;
+	color:black;
+	border:1px solid black;
+}
+.character input[type="radio"]::before, .equippableItem input[type="radio"]::before, .custom-dialog input[type="radio"]::before {
+    content:"\f10c";
+    color: black;
+    font-weight:normal;
+}
+.character input[type="radio"]:checked::before, .character  input[type="radio"]:checked::after, .equippableItem input[type="radio"]:checked::before,  .equippableItem  input[type="radio"]:checked::after, .custom-dialog input[type="radio"]:checked::before, .custom-dialog  input[type="radio"]:checked::after {
+    content: "\f192";
+    color: black;
+}
+.character .content-link, .equippableItem .content-link, .custom-dialog .content-link {
+  background:transparent;
+  color: black;
+  border: 0px;
+}
+.custom-system-user-input-button {
+    background: rgba(0, 0, 0, 0.05);
+    border: 2px groove black;
+    color: black
+}
+.custom-dialog .standard-form .form-footer > button {
+  color:black;
+  background:transparent;
+  border: 2px groove black;
+}
+.custom-system-user-input-button[data-inputaction="sub-10"] {
+	display:none;
+}
+.custom-system-user-input-button[data-inputaction="add-10"] {
+	display:none;
 }
 span:has(>#tipo_tirada-0) {
 	display:grid;
@@ -149,7 +237,7 @@ label[for="profesion-3"] {
 	width:20px;
 	background-color:black;
 }
-.panelhab {
+.panelhab  > :first-child{
 	display:grid;
 	grid-template-columns:50% auto auto auto;
 	margin:0px;
@@ -158,13 +246,13 @@ label[for="profesion-3"] {
 .margin_zero {
 	margin:0px;
 }
-.gap_zero {
+.gap_zero  > :first-child{
 	gap:0px;
 }
-.panelhabmag {
+.panelhabmag  > :first-child{
 	gap:0px;
 }
-.panelatrmag {
+.panelatrmag  > :first-child{
 	gap:0px;
 	margin-top:20px;
 }
@@ -216,11 +304,12 @@ label[for="profesion-3"] {
 	font-family:'Candara_Bold';
 	font-size:1.4em;
 	height:40px;
+	margin:0px;
 }
 .habcalcsub {
 	font-family:'Candara_Bold';
 }
-.panelhabcalc {
+.panelhabcalc  > :first-child{
 	display:grid;
 	grid-template-columns: auto auto;
 }
@@ -229,7 +318,7 @@ label[for="profesion-3"] {
 	padding-top:10px;
 	border-top:2px solid black;
 }
-.panelproezas {
+.panelproezas  > :first-child{
 	gap:0px;
 	display:grid;
 	grid-template-columns: auto 20% 20%;
@@ -238,7 +327,7 @@ label[for="profesion-3"] {
 	font-family:'Candara_Bold';
 	font-size:1.7em;
 }
-.panelcombat {
+.panelcombat  > :first-child{
 	display:grid;
 	grid-template-columns: 20% 55% 25%;
 }
@@ -314,6 +403,9 @@ label[for="profesion-3"] {
 	font-family:'Candara_Bold';
 	font-size:1.1em;
 }
+.panelprot .flexcol{
+	align-items:center;
+}
 .inpprot input[type="text"]{
 	font-family:'Candara';
 	font-size:1em;
@@ -356,7 +448,7 @@ label[for="profesion-3"] {
 .salesttable table tr:nth-child(1) td:nth-child(7), .salesttable table tr:nth-child(1) td:nth-child(8), .salesttable table tr:nth-child(1) td:nth-child(9), .salesttable table tr:nth-child(1) td:nth-child(10) {
 	background-color:orangered;
 }
-.paneltitulosalud {
+.paneltitulosalud  > :first-child{
 	display:grid;
 	width:100%;
 	gap:0px;
@@ -392,7 +484,7 @@ label[for="profesion-3"] {
 .paneltitulosalud div:nth-child(7){
 	grid-column: 29 / span 2;
 }
-.paneltituloestab{
+.paneltituloestab > :first-child{
 	display:grid;
 	width:100%;
 	gap:0px;
@@ -428,6 +520,7 @@ label[for="profesion-3"] {
 }
 .chat-message .message-content h1 {
 	font-family:'Candara_Bold';
+	font-size:2em;
 }
 .chat-message .message-content h2 {
 	font-family:'Candara_Bold';
@@ -453,7 +546,7 @@ label[for="profesion-3"] {
 	background-color: #782e222b;
 	margin: auto;
 }
-.editpanel {
+.editpanel  > :first-child{
 	gap:0px;
 	margin:0px;
 }
@@ -464,6 +557,12 @@ label[for="profesion-3"] {
 .paneledit {
 	font-family:'Candara_Bold';
 	margin:0px;
+	gap:0px;
+}
+.paneledit grid{
+	font-family:'Candara_Bold';
+	margin:0px;
+	gap:0px;
 }
 .paneledit  input[type="text"]{
 	border-style: solid;
@@ -471,6 +570,9 @@ label[for="profesion-3"] {
 	border-width: 0px 0px 1.5px 0px;
 	border-radius:0px;
 	background:transparent;
+	padding:0px;
+	min-width:10px;
+	margin:0px;
 }
 .paneledit  select{
 	border-style: solid;
@@ -478,6 +580,7 @@ label[for="profesion-3"] {
 	border-width: 0px 0px 1.5px 0px;
 	border-radius:0px;
 	background:transparent;
+	margin:0px;
 }
 .tituloedit {
 	font-size: 1.3em;
@@ -500,7 +603,7 @@ label[for="profesion-3"] {
 	height:20px;
 	margin:0px;
 }
-.panelhabcuervos {
+.panelhabcuervos  > :first-child{
     display: grid;
     grid-template-columns: 6% 49% auto auto auto;
     margin: 0px;
@@ -567,7 +670,7 @@ label[for="profesion-3"] {
 	height:40px;
 	margin:0px;
 }
-.paneldado {
+.paneldado  > :first-child{
 	display:grid;
 	grid-template-columns:50% auto;
 	margin:0px;
