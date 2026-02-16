@@ -89,6 +89,8 @@ Hooks.once("ready", function() {
 						game.user.setFlag("hojas-pj-ysystem", "lastVersion", game.modules.get("hojas-pj-ysystem").version);
 					});
 				};
+				ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 				}, 100);
 			});
 			game.settings.set("hojas-pj-ysystem", "firstTimeStart", false);
@@ -149,6 +151,8 @@ Hooks.once("ready", function() {
 						game.user.setFlag("hojas-pj-ysystem", "lastVersion", game.modules.get("hojas-pj-ysystem").version);
 					});
 				};
+				ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 				}, 100);
 			});
 		}
