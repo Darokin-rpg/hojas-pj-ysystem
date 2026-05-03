@@ -1,5 +1,6 @@
 # hojas-pj-ysystem
 Módulo para FOUNDRY VTT que contiene 3 plantillas de personaje: PJ Ysystem, PNJ Ysystem y PJ IMSERSO to the limit.
+La última  versión funciona sobre Foundry V13
 
 El módulo funciona sobre mundos que utilicen CUSTOM SYSTEM BUILDER como sistema de juego 
 
