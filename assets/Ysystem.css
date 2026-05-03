@@ -46,17 +46,17 @@
 	border-color: transparent transparent transparent #000000;
 }
 .character input[type="checkbox"]::before, .equippableItem input[type="checkbox"]::before, .custom-dialog input[type="checkbox"]::before {
-    content:"";
+    content:"\f0c8";
     color: black;
     font-weight:normal;
 }
 .character  input[type="checkbox"]:checked::after, .equippableItem  input[type="checkbox"]:checked::after, .custom-dialog  input[type="checkbox"]:checked::after {
-    content: "";
-    color: transparent;
+    content: "\f14a";
+    color: black;
 }
 .character input[type="checkbox"]:checked::before, .equippableItem input[type="checkbox"]:checked::before,  .custom-dialog input[type="checkbox"]:checked::before {
-    content: "";
-    color: black;
+    content: "\f14a\f14a";
+    color: transparent;
 }
 .custom-dialog .form-group > label {
 	color: black;
@@ -737,7 +737,7 @@ input[type=text] {
 .checkysys input[type="checkbox"]:checked::after {
     content: "";
 }
-.custom-system-user-inputs tr:first-child {
+.custom-system-user-inputs thead tr:first-child {
 	display:none;
 }
 .puntos_poder_actual {

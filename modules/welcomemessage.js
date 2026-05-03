@@ -61,6 +61,8 @@ Hooks.once("ready", function() {
 						let docs =  collectionYsystem.importAll({folderId: folderidentYsystem, folderName: "Actores Ysystem", keepId: true});
 						game.user.setFlag("hojas-pj-ysystem", "welcomeMessage", true);
 						game.user.setFlag("hojas-pj-ysystem", "lastVersion", game.modules.get("hojas-pj-ysystem").version);
+						ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				};
 				const buttonImserso = document.getElementById(buttonIdImserso);
@@ -74,6 +76,8 @@ Hooks.once("ready", function() {
 						let docs =  collectionImserso.importAll({folderId: folderidentImserso, folderName: "Actores Imserso", keepId: true});
 						game.user.setFlag("hojas-pj-ysystem", "welcomeMessage", true);
 						game.user.setFlag("hojas-pj-ysystem", "lastVersion", game.modules.get("hojas-pj-ysystem").version);
+						ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				};
 				const buttonCuervos = document.getElementById(buttonIdCuervos);
@@ -87,10 +91,10 @@ Hooks.once("ready", function() {
 						let docs =  collectionCuervos.importAll({folderId: folderidentCuervos, folderName: "Actores Cuervos de Asgard", keepId: true});
 						game.user.setFlag("hojas-pj-ysystem", "welcomeMessage", true);
 						game.user.setFlag("hojas-pj-ysystem", "lastVersion", game.modules.get("hojas-pj-ysystem").version);
+						ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				};
-				ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
-						window.setTimeout(window.location.reload.bind(window.location), 7000);
 				}, 100);
 			});
 			game.settings.set("hojas-pj-ysystem", "firstTimeStart", false);
@@ -123,6 +127,8 @@ Hooks.once("ready", function() {
 						let docs =  collectionYsystem.importAll({folderId: folderidentYsystem, folderName: "Actores Ysystem", keepId: true});
 						game.user.setFlag("hojas-pj-ysystem", "welcomeMessage", true);
 						game.user.setFlag("hojas-pj-ysystem", "lastVersion", game.modules.get("hojas-pj-ysystem").version);
+						ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				};
 				const buttonImserso = document.getElementById(buttonIdImserso);
@@ -136,6 +142,8 @@ Hooks.once("ready", function() {
 						let docs =  collectionImserso.importAll({folderId: folderidentImserso, folderName: "Actores Imserso", keepId: true});
 						game.user.setFlag("hojas-pj-ysystem", "welcomeMessage", true);
 						game.user.setFlag("hojas-pj-ysystem", "lastVersion", game.modules.get("hojas-pj-ysystem").version);
+						ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				};
 				const buttonCuervos = document.getElementById(buttonIdCuervos);
@@ -149,10 +157,10 @@ Hooks.once("ready", function() {
 						let docs =  collectionCuervos.importAll({folderId: folderidentCuervos, folderName: "Actores Cuervos de Asgard", keepId: true});
 						game.user.setFlag("hojas-pj-ysystem", "welcomeMessage", true);
 						game.user.setFlag("hojas-pj-ysystem", "lastVersion", game.modules.get("hojas-pj-ysystem").version);
+						ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
+						window.setTimeout(window.location.reload.bind(window.location), 7000);
 					});
 				};
-				ui.notifications.info(game.i18n.localize("Templates importadas. Recargando mundo en 6sec..."), {permanent: true});
-						window.setTimeout(window.location.reload.bind(window.location), 7000);
 				}, 100);
 			});
 		}
